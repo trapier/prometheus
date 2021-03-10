@@ -89,7 +89,7 @@ docker:
 	docker build -t "$(DOCKER_IMAGE_NAME):$(DOCKER_IMAGE_TAG)" .
 
 promu:
-	GOOS= GOARCH= $(GO) get -u github.com/prometheus/promu
+	GOOS= GOARCH= $(GO) get -u github.com/prometheus/promu/@v0.6.0
 
 $(FIRST_GOPATH)/bin/staticcheck:
 	GOOS= GOARCH= $(GO) get -u honnef.co/go/tools/cmd/staticcheck
